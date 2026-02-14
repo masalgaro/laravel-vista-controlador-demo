@@ -29,4 +29,20 @@ class ProductController extends Controller {
 		$viewData["product"] = $product;
 		return view('product.show')->with("viewData",$viewData);
 	}
+
+	public function create(): View {
+		$viewData = [];
+		$viewData["title"] = "Create product";
+
+		return view('product.create')->with("viewData",$viewData);
+	}
+
+	public function save(Request $request) {
+		$request->validate([
+			"name" => "required",
+			"price" => "required"
+		]);
+		dd($request->all());
+		// The code to call the model and add to database would be added here.
+	}
 }
