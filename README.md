@@ -4,7 +4,7 @@ Made for the Topics in Software Engineering class, at EAFIT University. Followin
 
 ## Implementation
 
-This is a standard Laravel example project, which can be easily be created using [composer](https://getcomposer.org/).
+This is a standard Laravel example project, which can easily be created using [composer](https://getcomposer.org/).
 
 You can effortlessly create this project using the command `composer create-project laravel/laravel example "12.*" --prefer.dist` (though you can switch 'example' for any name you want the project to have).
 
