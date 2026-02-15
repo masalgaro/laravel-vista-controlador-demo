@@ -13,6 +13,18 @@ Route::get('/about', function () {
 			  ->with("description",$description)
 			  ->with("author",$author);
 })->name("home.about");
+Route::get('/contact', function () {
+	$contactTitle = "Contact - Online Store";
+	$contactSub = "Contact Information";
+	$name = "Maddie Gómez Olarte";
+	$address = "Medellín, Antioquia, Colombia";
+	$phone = "123 1234567";
+	return view('home.contact')->with("title",$contactTitle)
+			    ->with("subtitle",$contactSub)
+			    ->with("authorName",$name)
+			    ->with("authorAddress",$address)
+			    ->with("authorPhone",$phone);
+})->name("home.contact");
 Route::get('/products', 'App\Http\Controllers\ProductController@index')->name("product.index");
 Route::get('/products/create', 'App\Http\Controllers\ProductController@create')->name("product.create");
 Route::post('/products/save', 'App\Http\Controllers\ProductController@save')->name("product.save");
