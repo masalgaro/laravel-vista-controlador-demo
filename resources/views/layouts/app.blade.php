@@ -19,6 +19,8 @@
 					<a class="nav-link active" href="{{ route('home.index') }}">Home</a>
 					<a class="nav-link active" href="{{ route('home.about') }}">About</a>
 					<a class="nav-link active" href="{{ route('home.contact') }}">Contact</a>
+					<a class="nav-link active" href="{{ route('product.index') }}">Product</a>
+					<a class="nav-link active" href="{{ route('product.create') }}">Create Products</a>
 				</div>
 			</div>
 		</div>
@@ -37,7 +39,7 @@
 
 	<!--footer-->
 	<div class="copyright py-4 text-center text-white">
-		<div class="container">
+		<div class="container copyright">
 			<small>
 				Copyright - <a class="text-reset fw-bold text-decoration-non" target="_blank" href="https://twitter.com/danielgarax"> Daniel Correa </a>
 			</small>
