@@ -43,6 +43,7 @@ class ProductController extends Controller
             'name' => 'required',
             'price' => 'required',
         ]);
+        Product::create($request->only(['name', 'price']));
 
         return back();
     }
