@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Utils\ImageLocalStorage;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
+use Illuminate\View\View;
+
+class ImageNotDIController extends Controller
+{
+    public function index(): View
+    {
+        return view('imagenotdi.index');
+    }
+
+    public function save(Request $request): RedirectResponse
+    {
+        $storageImageLocal = new ImageLocalStorage();
+        $storageImageLocal->store($request);
+
+        return back();
+    }
+}
+
