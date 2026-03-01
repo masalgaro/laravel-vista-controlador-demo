@@ -19,7 +19,7 @@ class CartController extends Controller
         if ($cart_product_data) {
             foreach (array_keys($cartProductData) as $key) {
                 if (isset($products[$key])) {
-                    $cartProducts[$key] = $products[$key]
+                    $cartProducts[$key] = $products[$key];
                 }
             }
         }
