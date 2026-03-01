@@ -16,7 +16,7 @@ class CartController extends Controller
 
         $cartProducts = [];
         $cartProductData = $request->session()->get('cart_product_data'); //get the products stored in the current session
-        if ($cart_product_data) {
+        if ($cartProductData) {
             foreach (array_keys($cartProductData) as $key) {
                 if (isset($products[$key])) {
                     $cartProducts[$key] = $products[$key];
