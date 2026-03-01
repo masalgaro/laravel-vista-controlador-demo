@@ -23,7 +23,7 @@
         <div class="col-md-12">
             <h1>Products in cart</h1>
                 <ul>
-                    @foreach ($viewData as $key => $product)
+                    @foreach ($viewData['cartProducts'] as $key => $product)
                         <li>
                         Id: {{ $key }} -
                         Name: {{ $product['name'] }} -
